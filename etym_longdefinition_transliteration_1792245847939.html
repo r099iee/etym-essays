@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>transliteration — Evolution Essay</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #5a4f42; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #f5efe6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .evolution {
+      min-height: 1.2em;
+      margin: 10px 0;
+      background: #5a4f42;
+      padding: 16px 20px;
+      border-radius: 8px;
+      border: none;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .derivation-tree, .etymology-tree {
+      font-family: 'JetBrains Mono', 'Cascadia Mono', Courier, monospace;
+      font-size: 0.9em;
+      line-height: 1.6;
+      white-space: pre;
+      overflow-x: auto;
+      background: #5a4f42;
+      padding: 18px;
+      border-radius: 8px;
+      margin: 15px 0;
+      min-height: 1.2em;
+      border: none;
+      color: #f5efe6;
+    }
+    b, strong { color: #fbbf24; }
+    i, em { color: #d9cdbd; }
+  </style>
+</head>
+<body>
+<div class="field-content">
+<p><b>transliteration</b> is a precise linguistic, bibliographic, and computational process designating the character-by-character or grapheme-by-grapheme conversion of written text from one writing system or alphabet into another corresponding orthographic script. Unlike phonetic transcription, which seeks to capture the acoustic and articulatory realities of spoken sounds (often utilizing specialized phonetic symbols such as the International Phonetic Alphabet), transliteration operates strictly at the level of written graphic characters (graphemes), regardless of dialectal pronunciation variations or phonological shifts across languages.</p>
+
+<p><b>Core Principles and Graphemic Bijectivity:</b></p>
+<ul>
+<li><b>Graphemic Mapping vs. Phonetic Transcription:</b> Transliteration focuses entirely on graphic sign substitution rather than sonic representation. For instance, transliterating the Russian word <i>щи</i> using ISO 9 yields <i>ŝi</i>, preserving the single grapheme <i>щ</i> as a unique diacritic-marked Latin letter, whereas a phonetic transcription aimed at English speakers might represent it as <i>shchi</i> or [ɕːi], masking the underlying orthography.</li>
+<li><b>Bijectivity and Lossless Round-Trip Conversion:</b> In library science, philology, and digital information systems, the ultimate ideal of a transliteration schema is mathematical bijectivity—an unambiguous one-to-one mapping between the graphemes of the source alphabet and the target alphabet. A bijective transliteration allows for completely deterministic, lossless reverse-transliteration (back-transliteration), enabling an archivist or computer algorithm to reconstruct the original native script text with 100% fidelity without needing contextual knowledge or morphological parsing.</li>
+<li><b>Grapheme Inventories and Diacritical Systems:</b> Because target alphabets (most frequently the Latin alphabet) rarely possess a sufficient number of base characters to match the inventories of complex scripts (such as Arabic, Hebrew, Devanagari, Georgian, or Cyrillic), rigorous transliteration frameworks introduce systematic diacritics (macrons, breves, cedillas, carons, underdots, and tildes) or digraphs to maintain unambiguous character distinctions.</li>
+</ul>
+
+<p><b>Major International Standards and Domain Conventions:</b></p>
+<ul>
+<li><b>Library and Bibliographic Cataloging (ALA-LC and ISO):</b> Major research institutions and national libraries depend on standardized transliteration tables—such as the American Library Association / Library of Congress (ALA-LC) Romanization Tables and International Organization for Standardization standards (e.g., ISO 9 for Cyrillic, ISO 259 for Hebrew, ISO 233 for Arabic, ISO 843 for Greek, and ISO 15919 for Indic scripts). These standards ensure that library catalog records (such as MARC 21 entries) across global university repositories can index non-Latin publications uniformly so that researchers worldwide can search, cite, and retrieve texts across disparate linguistic traditions.</li>
+<li><b>Indological and Classical Philology (IAST):</b> In South Asian philology, the International Alphabet of Sanskrit Transliteration (IAST) established a universal scholarly consensus for transcribing Devanagari, Brahmic, and other Indic scripts into Latin typography (e.g., converting <i>ऋ</i> to <i>ṛ</i>, <i>श</i> to <i>ś</i>, and <i>ष</i> to <i>ṣ</i>). This standard allowed 19th- and 20th-century philologists to compare Vedic Sanskrit with Greek, Latin, Avestan, and Gothic without requiring specialized regional printing presses for every script.</li>
+<li><b>Epigraphy, Assyriology, and Ancient Near Eastern Studies:</b> In cuneiform studies, epigraphers maintain an indispensable distinction between <i>transliteration</i> and <i>transcription</i> (or normalization). A Sumerian or Akkadian cuneiform text is first transliterated sign-by-sign in bold or lowercase Roman characters separated by hyphens (e.g., <i>lú-gal</i>), representing the exact physical wedge-signs impressed into clay; it is subsequently transcribed into normalized grammatical forms (e.g., <i>lugal</i>, "king") or translated into English.</li>
+</ul>
+
+<p><b>Computational Linguistics, Internationalization (i18n), and Information Retrieval:</b></p>
+<ul>
+<li><b>Natural Language Processing and Machine Translation:</b> In computational linguistics, named entities (personal names, geographic locations, corporate titles) occurring in non-Latin scripts represent a notorious "out-of-vocabulary" (OOV) challenge. State-of-the-art neural machine translation (NMT) and cross-lingual search engines deploy automated transliteration models to map unfamiliar named entities across scripts while preserving phonetic recognizability and cultural naming conventions.</li>
+<li><b>Input Method Editors (IMEs) and Digital Typing:</b> In software engineering, billions of users daily interact with transliteration-based keyboard input engines. Systems such as Japanese Romaji input or Chinese Pinyin input rely on real-time graphemic mapping algorithms that convert Latin keystrokes typed on standard QWERTY keyboards into Japanese kana/kanji or Chinese ideographic hanzi on the user's screen.</li>
+<li><b>URL Slugification and Database Indexing:</b> In web development, transliteration algorithms convert Cyrillic, Greek, Arabic, or accented European characters into ASCII-safe URL slugs and database keys (e.g., converting "München" to "muenchen" or "Краков" to "krakov"), ensuring universal interoperability across older networking protocols and browser address bars.</li>
+</ul>
+
+<p><b>Polysemy, Sociolinguistic Power, and Political Orthography:</b></p>
+<ul>
+<li><b>Orthographic Geopolitics:</b> Transliteration and script adoption are frequently fraught with political and cultural significance. The formal decision to romanize an alphabet—such as Mustafa Kemal Atatürk's radical 1928 alphabet reform replacing the Ottoman Perso-Arabic script with the Latin alphabet, or post-Soviet republics (such as Azerbaijan, Turkmenistan, Uzbekistan, and Kazakhstan) transitioning away from Cyrillic toward Latin orthographies—fundamentally reorients a civilization's geopolitical and educational trajectory.</li>
+<li><b>Informal Vernacular Transliteration:</b> In contemporary digital communication, informal vernacular transliteration systems have arisen organically among youth populations using mobile keyboards, such as <i>Arabizi</i> (Arabic chat alphabet utilizing Latin numerals like '3' for the pharyngeal consonant *ʿayn* and '7' for *ḥāʾ*) or <i>Volapuk</i> encoding in early Russian cyberspace.</li>
+</ul>
+
+<p><b>Semantic Reasoning and Historical Bridges:</b></p>
+<p>The semantic trajectory of <i>transliteration</i> represents a direct response to the global communication revolution of the 19th century. Coined by European philologists and orientalists in the late 1850s from the Latin prefix <i>trans-</i> ("across, beyond") and <i>littera</i> ("letter"), the term was forged when the dramatic influx of Sanskrit, Persian, Arabic, and Egyptian manuscripts overwhelmed traditional translation methods. Scholars recognized that to discuss the morphology and etymology of foreign tongues in printed books, they required a scientific mechanism to carry the exact literal characters across the barrier of alphabetic difference without altering the source vocabulary. Over the subsequent century and a half, as the world moved from movable type printing to digital databases and neural network tokenizers, <i>transliteration</i> evolved from a specialized academic tool into a fundamental operational bedrock of global computing and information science.</p>
+</div>
+</body>
+</html>
